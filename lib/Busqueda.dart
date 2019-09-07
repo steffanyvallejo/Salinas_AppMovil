@@ -152,9 +152,7 @@ class _BusquedaWidgetState extends State<BusquedaWidget>{
       ),
     );
   }
-  setText(String a){
-    _fechaSalida=a;
-  }
+
 
   }
 
