@@ -15,8 +15,8 @@ _BusquedaWidgetState createState() => _BusquedaWidgetState();
 
 class _BusquedaWidgetState extends State<BusquedaWidget>{
   DateTime _dateTime = new DateTime.now();
-  String _fechaLlegada = "No ha seleccionado fecha";
-  String _fechaSalida = "No ha seleccionado fecha";
+  String _fechaLlegada = "";
+  String _fechaSalida = "";
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +29,7 @@ class _BusquedaWidgetState extends State<BusquedaWidget>{
         child: new ListView(
 
           children: <Widget>[
+
 
             /*RaisedButton(
 
@@ -145,9 +146,9 @@ class _BusquedaWidgetState extends State<BusquedaWidget>{
               color: Colors.white,
             ),
 */
-            Container(
-              alignment: Alignment.center,
-              height: 50.0,
+            Card(
+
+
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -176,9 +177,7 @@ class _BusquedaWidgetState extends State<BusquedaWidget>{
             ),
 
 
-            Container(
-              alignment: Alignment.center,
-              height: 50.0,
+            Card(
 
 
               child: Row(
@@ -213,6 +212,7 @@ class _BusquedaWidgetState extends State<BusquedaWidget>{
             MaterialButton(
                 shape: new RoundedRectangleBorder(
                   borderRadius: new BorderRadius.circular(30.0),
+
                 ),
                 color: Colors.lightBlue,
               onPressed: () async {
