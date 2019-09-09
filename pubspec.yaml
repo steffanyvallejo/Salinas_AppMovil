@@ -19,6 +19,7 @@ environment:
 dependencies:
   flutter_masked_text: ^0.8.0
   flutter_datetime_picker: 1.2.5
+  date_range_picker: ^1.0.5
   flutter:
     sdk: flutter
 

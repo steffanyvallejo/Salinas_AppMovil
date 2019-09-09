@@ -284,13 +284,20 @@ class _UserLoginState extends State<UserLogin> {
                                             mainAxisAlignment:
                                             MainAxisAlignment.spaceEvenly,
                                             children: <Widget>[
+                                              Icon(
+                                                Icons.flight_land,
+                                                size: 18.0,
+                                                color: Colors.lightBlue,
+
+                                              ),
 
                                               Text(
                                                 "GOOGLE",
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
                                                     color: Colors.white,
-                                                    fontWeight: FontWeight.bold),
+                                                    fontWeight: FontWeight.bold)
+                                                    ,
                                               ),
                                             ],
                                           ),
