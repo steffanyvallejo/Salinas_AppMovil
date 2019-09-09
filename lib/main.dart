@@ -3,27 +3,40 @@ import 'login_screen.dart';
 import 'splash_screen.dart';
 import 'singup_screen.dart';
 import 'home_screen.dart';
-
+import 'package:flutter/rendering.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 var routes = <String, WidgetBuilder>{
   "/login_screen": (BuildContext context) => UserLogin(),
   "/singin_screen": (BuildContext context) => RegistrationScreen()
 };
 
-void main() => runApp(MyApp());
+void main() {
+  debugPaintSizeEnabled = false; //true para que se muestren las cuadriculas
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Hotel Salinas',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-          primaryColor: Colors.lightBlueAccent,primarySwatch: Colors.cyan,
-          primaryColorDark: Colors.lightBlueAccent
-      ),
-      home: SplashScreen(),
+        localizationsDelegates: [
+          // ... delegado[s] de localización específicos de la app aquí
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+        ],
+        supportedLocales: [
+          const Locale('en'), // Inglés
+          const Locale('es'), // Español
+        ],
+        title: 'Hotel Salinas',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+            primaryColor: Colors.lightBlueAccent,
+            primarySwatch: Colors.cyan,
+            primaryColorDark: Colors.lightBlueAccent),
+        home: SplashScreen(),
         routes: routes);
   }
 }

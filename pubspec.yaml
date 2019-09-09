@@ -20,15 +20,18 @@ dependencies:
   flutter_masked_text: ^0.8.0
   flutter_datetime_picker: 1.2.5
   date_range_picker: ^1.0.5
+  flutter_staggered_grid_view: "^0.2.7"
+  intl: ^0.15.8
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_cupertino_localizations: ^1.0.1
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-  intl: ^0.15.7
-
 
 dev_dependencies:
   flutter_test:
@@ -52,6 +55,8 @@ flutter:
     - assets/images/logo.png
     - assets/images/facebook.png
     - assets/images/google_plus.png
+    - assets/images/font1.jpg
+    - assets/images/font2.jpg    
 
 
 

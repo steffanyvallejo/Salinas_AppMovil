@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:salinas_app/Chat.dart';
 import 'package:salinas_app/Busqueda.dart';
 import 'package:salinas_app/DetalleHabitacion.dart';
+import 'package:salinas_app/BusquedaHabitacion.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -14,7 +15,7 @@ class _HomeState extends State<Home> {
   int _currentIndex = 0;
   static const TextStyle optionStyle = TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   final List<Widget> _children = [
-    BusquedaWidget(), ChatWidget(), HotelDetailsPage()
+    FilterForm(), ChatWidget(), HotelDetailsPage()
   ];
   @override
   Widget build(BuildContext context) {
