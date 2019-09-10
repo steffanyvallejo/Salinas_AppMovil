@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:date_range_picker/date_range_picker.dart' as DateRangePicker;
 
+import 'DetalleHabitacion.dart';
+import 'habitaciones_screen.dart';
+
 class FilterForm extends StatefulWidget {
   @override
   _FilterFormState createState() => new _FilterFormState();
@@ -433,21 +436,53 @@ class _FilterFormState extends State<FilterForm> {
                 flex: 2,
               ),
               //Boton
-              Spacer(),
-              Expanded(
-                child: Row(
+              new Container(
+                width: MediaQuery.of(context).size.width,
+                margin: const EdgeInsets.only(left: 30.0, right: 30.0, top: 5.0),
+                alignment: Alignment.center,
+                child: new Row(
                   children: <Widget>[
-                    Expanded(
-                      child: RaisedButton(
-                          color: Colors.blue,
-                          textColor: Colors.white,
-                          child: new Text('Buscar'),
-                          onPressed: onPressedSubmit),
-                    )
+                    new Expanded(
+                      child: new FlatButton(
+                        shape: new RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(30.0),
+                        ),
+                        color: Colors.lightBlue,
+
+                       onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => habitaciones_screen ()),
+                                  );
+                                              },
+
+                        child: new Container(
+                          padding: const EdgeInsets.symmetric(
+                            vertical: 20.0,
+                            horizontal: 20.0,
+                          ),
+                          child: new Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+
+                              new Expanded(
+                                child: Text(
+                                  "BUSCAR",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
-                flex: 1,
               ),
+              Spacer(),
             ],
           ),
         ) /* add child content here */,

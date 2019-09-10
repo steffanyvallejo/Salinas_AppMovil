@@ -68,23 +68,23 @@ class HotelDetailsPage extends StatelessWidget {
                                   children: <Widget>[
                                     Icon(
                                       Icons.star,
-                                      color: Colors.purple,
+                                      color: Colors.lightBlue,
                                     ),
                                     Icon(
                                       Icons.star,
-                                      color: Colors.purple,
+                                      color: Colors.lightBlue,
                                     ),
                                     Icon(
                                       Icons.star,
-                                      color: Colors.purple,
+                                      color: Colors.lightBlue,
                                     ),
                                     Icon(
                                       Icons.star,
-                                      color: Colors.purple,
+                                      color: Colors.lightBlue,
                                     ),
                                     Icon(
-                                      Icons.star_border,
-                                      color: Colors.purple,
+                                      Icons.star,
+                                      color: Colors.lightBlue,
                                     ),
                                   ],
                                 ),
@@ -102,7 +102,7 @@ class HotelDetailsPage extends StatelessWidget {
                           Column(
                             children: <Widget>[
                               Text("\$ 200", style: TextStyle(
-                                  color: Colors.purple,
+                                  color: Colors.lightBlue,
                                   fontWeight: FontWeight.bold,
                                   fontSize: 20.0
                               ),),
@@ -119,7 +119,7 @@ class HotelDetailsPage extends StatelessWidget {
                         width: double.infinity,
                         child: RaisedButton(
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
-                          color: Colors.purple,
+                          color: Colors.lightBlue,
                           textColor: Colors.white,
                           child: Text("Agregar al carrito", style: TextStyle(
                               fontWeight: FontWeight.normal

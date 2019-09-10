@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:salinas_app/singup_screen.dart';
 import 'package:salinas_app/home_screen.dart';
 
+import '../habitaciones_screen.dart';
+
 class NavigationRouter {
   static void switchToLogin(BuildContext context) {
     Navigator.pushNamed(context, "/login_screen");
@@ -18,6 +20,14 @@ class NavigationRouter {
     Navigator.push(context, new MaterialPageRoute(
         builder: (context) =>
         new Home())
+    );
+  }
+
+
+  static void switchToRooms(BuildContext context) {
+    Navigator.push(context, new MaterialPageRoute(
+        builder: (context) =>
+        new habitaciones_screen())
     );
   }
   static void switchToProfile(BuildContext context) {
