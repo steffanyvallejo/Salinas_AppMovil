@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:salinas_app/Chat.dart';
-import 'package:salinas_app/Busqueda.dart';
 import 'package:salinas_app/DetalleHabitacion.dart';
-import 'package:salinas_app/BusquedaHabitacion.dart';
+import 'package:salinas_app/screens/home/search_available.dart';
 
 class Home extends StatefulWidget {
   @override

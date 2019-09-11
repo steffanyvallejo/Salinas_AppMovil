@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:salinas_app/utils/navigation_router.dart';
 import 'package:salinas_app/utils/util.dart';
@@ -12,7 +11,6 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     Timer(Duration(seconds: 5), () => NavigationRouter.switchToLogin(context));
   }
@@ -32,7 +30,6 @@ class _SplashScreenState extends State<SplashScreen> {
               Expanded(
                 flex: 4,
                 child: Container(
-
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
@@ -58,7 +55,6 @@ class _SplashScreenState extends State<SplashScreen> {
                   ),
                 ),
               ),
-
             ],
           )
         ],

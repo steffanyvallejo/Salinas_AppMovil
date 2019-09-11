@@ -165,12 +165,4 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       ),
     );
   }
-
-  _performLogin() {
-
-  }
-
-  _navigateRegistration() {
-    NavigationRouter.switchToRegistration(context);
-  }
 }

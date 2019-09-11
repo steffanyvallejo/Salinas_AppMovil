@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:date_range_picker/date_range_picker.dart' as DateRangePicker;
 
-import 'DetalleHabitacion.dart';
-import 'habitaciones_screen.dart';
+// import 'DetalleHabitacion.dart';
+// import 'habitaciones_screen.dart';
 
 class FilterForm extends StatefulWidget {
   @override
@@ -438,7 +438,8 @@ class _FilterFormState extends State<FilterForm> {
               //Boton
               new Container(
                 width: MediaQuery.of(context).size.width,
-                margin: const EdgeInsets.only(left: 30.0, right: 30.0, top: 5.0),
+                margin:
+                    const EdgeInsets.only(left: 30.0, right: 30.0, top: 5.0),
                 alignment: Alignment.center,
                 child: new Row(
                   children: <Widget>[
@@ -448,14 +449,12 @@ class _FilterFormState extends State<FilterForm> {
                           borderRadius: new BorderRadius.circular(30.0),
                         ),
                         color: Colors.lightBlue,
-
-                       onPressed: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(builder: (context) => habitaciones_screen ()),
-                                  );
-                                              },
-
+                        onPressed: () {
+                          // Navigator.push(
+                          //   context,
+                          //   MaterialPageRoute(builder: (context) => habitaciones_screen ()),
+                          // );
+                        },
                         child: new Container(
                           padding: const EdgeInsets.symmetric(
                             vertical: 20.0,
@@ -464,7 +463,6 @@ class _FilterFormState extends State<FilterForm> {
                           child: new Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-
                               new Expanded(
                                 child: Text(
                                   "BUSCAR",

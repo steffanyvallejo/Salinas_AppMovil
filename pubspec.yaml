@@ -27,6 +27,8 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   flutter_cupertino_localizations: ^1.0.1
+  http: ^0.12.0+2
+  progress_hud: ^1.1.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -56,7 +58,8 @@ flutter:
     - assets/images/facebook.png
     - assets/images/google_plus.png
     - assets/images/font1.jpg
-    - assets/images/font2.jpg    
+    - assets/images/font2.jpg
+    - assets/images/room1.jpg    
 
 
 
