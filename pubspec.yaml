@@ -30,6 +30,7 @@ dependencies:
   http: ^0.12.0+2
   progress_hud: ^1.1.0
   datetime_picker_formfield: ^0.1.8
+  webview_flutter: ^0.3.14
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -59,7 +60,8 @@ flutter:
     - assets/images/google_plus.png
     - assets/images/font1.jpg
     - assets/images/font2.jpg
-    - assets/images/room1.jpg    
+    - assets/images/room1.jpg
+    - assets/webViews/addCard.html
 
 
 
