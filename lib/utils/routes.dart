@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:salinas_app/screens/access/login.dart';
+import 'package:salinas_app/screens/access/profile.dart';
 import 'package:salinas_app/screens/access/singup.dart';
 import 'package:salinas_app/screens/home/home.dart';
 import 'package:salinas_app/screens/access/splash.dart';
@@ -13,4 +14,5 @@ final routes = {
   '/' : (BuildContext context) => new SplashScreen(),
   '/addCard' : (BuildContext context) => new AddCard(),
   '/cart' : (BuildContext context) => new Cart(),
+  '/profile' : (BuildContext context) => new ProfilePage(),
 };

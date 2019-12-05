@@ -61,6 +61,7 @@ flutter:
     - assets/images/font1.jpg
     - assets/images/font2.jpg
     - assets/images/room1.jpg
+    - assets/images/as.png
     - assets/webViews/addCard.html
 
 
