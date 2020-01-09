@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:salinas_app/Chat.dart';
 import 'package:salinas_app/DetalleHabitacion.dart';
 import 'package:salinas_app/screens/home/search_available.dart';
+import 'package:salinas_app/screens/noticias/noticias.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -14,7 +15,7 @@ class _HomeState extends State<Home> {
   int _currentIndex = 0;
   static const TextStyle optionStyle = TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   final List<Widget> _children = [
-    FilterForm(), ChatWidget(), HotelDetailsPage()
+    FilterForm(), ChatWidget(), HotelDetailsPage(), Noticias()
   ];
   @override
   Widget build(BuildContext context) {
@@ -56,7 +57,7 @@ class _HomeState extends State<Home> {
           BottomNavigationBarItem(
               backgroundColor: Colors.lightBlueAccent[200],
               icon: Icon(Icons.chat),
-              title: Text('Chat')
+              title: Text('Noticias')
 
           ),
         ],
