@@ -1,9 +1,5 @@
-import 'dart:io';
-import 'dart:convert';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:salinas_app/models/Noticia.dart';
 import 'package:webview_flutter/webview_flutter.dart';
@@ -23,7 +19,7 @@ class Noticias extends StatefulWidget {
 class NoticiasState extends State<Noticias> {
 
   Future<List<Noticia>> listaNoticias = obtenerListaNoticias(url);
-
+  
   Widget noticiaTemplate(noticia) {
     return Card(
         margin: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0),
